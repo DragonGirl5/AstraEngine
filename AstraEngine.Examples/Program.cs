@@ -4,6 +4,7 @@ using AstraEngine.Examples.PlayerMovement;
 (string name, Action action)[] examples =
 [
     ("Player Movement", PlayerMovementExample.Run),
+    ("Mouse Click", MouseClickExample.Run),
     ("Exit", () => Environment.Exit(0)),
 ];
 

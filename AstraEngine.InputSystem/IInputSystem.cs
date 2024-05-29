@@ -7,4 +7,10 @@ public interface IInputSystem
     /// <param name="key">The key to check</param>
     /// <returns>true if the key is currently being held and false otherwise</returns>
     public bool IsKeyDown(KeyCode key);
+
+    /// <summary>
+    /// <para name="IsMouseClicked> The Mouse is clicked /param>
+    /// /summary>
+    /// returns>/returns>
+    public bool IsMouseClicked();
 }

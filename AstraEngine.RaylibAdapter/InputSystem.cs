@@ -9,4 +9,10 @@ public sealed class Input : IInputSystem
     public static Input Shared { get; } = new();
     /// <inheritdoc/>
     public bool IsKeyDown(KeyCode key) => Raylib.IsKeyDown(key.AsRayKey());
+    /// <inheritdoc/>
+
+    public bool IsMouseClicked()
+    {
+        return Raylib.IsMouseButtonDown(MouseButton.Left);
+    }
 }
